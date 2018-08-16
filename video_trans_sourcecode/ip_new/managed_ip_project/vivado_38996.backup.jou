@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Jul  7 14:52:50 2018
+# Process ID: 38996
+# Current directory: C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent48252 C:\Users\KANG Jian\Desktop\video_trans_advanced\video_trans_sourcecode\ip_new\managed_ip_project\managed_ip_project.xpr
+# Log file: C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/vivado.log
+# Journal file: C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.xpr}
+create_ip -name aurora_8b10b -vendor xilinx.com -library ip -version 11.1 -module_name aurora_8b10b_0 -dir {c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new}
+set_property -dict [list CONFIG.C_LINE_RATE {0.5} CONFIG.Dataflow_Config {TX-only_Simplex} CONFIG.Backchannel_mode {Timer} CONFIG.C_ROW_USED {bottom} CONFIG.C_GT_LOC_9 {X} CONFIG.C_GT_LOC_4 {1} CONFIG.C_GT_LOC_1 {X} CONFIG.C_GT_CLOCK_1 {GTPQ0} CONFIG.SINGLEEND_INITCLK {true} CONFIG.SupportLevel {1} CONFIG.RX_PPM_OFFSET {0}] [get_ips aurora_8b10b_0]
+generate_target {instantiation_template} [get_files {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_0/aurora_8b10b_0.xci}}]
+export_ip_user_files -of_objects  [get_files {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_0/aurora_8b10b_0.xci}}] -no_script -reset -force -quiet
+remove_files  {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_0/aurora_8b10b_0.xci}}
+file delete -force {c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_0}
+create_ip -name aurora_8b10b -vendor xilinx.com -library ip -version 11.1 -module_name aurora_8b10b_tx -dir {c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new}
+set_property -dict [list CONFIG.Component_Name {aurora_8b10b_tx} CONFIG.C_LINE_RATE {0.5} CONFIG.Dataflow_Config {TX-only_Simplex} CONFIG.Backchannel_mode {Timer} CONFIG.C_ROW_USED {bottom} CONFIG.C_GT_LOC_9 {X} CONFIG.C_GT_LOC_4 {1} CONFIG.C_GT_LOC_1 {X} CONFIG.C_GT_CLOCK_1 {GTPQ0} CONFIG.SINGLEEND_INITCLK {true} CONFIG.SupportLevel {1} CONFIG.RX_PPM_OFFSET {0}] [get_ips aurora_8b10b_tx]
+generate_target {instantiation_template} [get_files {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_tx/aurora_8b10b_tx.xci}}]
+generate_target all [get_files  {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_tx/aurora_8b10b_tx.xci}}]
+catch { config_ip_cache -export [get_ips -all aurora_8b10b_tx] }
+export_ip_user_files -of_objects [get_files {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_tx/aurora_8b10b_tx.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_tx/aurora_8b10b_tx.xci}}]
+launch_runs -jobs 16 aurora_8b10b_tx_synth_1
+export_simulation -of_objects [get_files {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_tx/aurora_8b10b_tx.xci}}] -directory {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/ip_user_files} -ipstatic_source_dir {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/modelsim} {questa=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/questa} {riviera=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/riviera} {activehdl=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet

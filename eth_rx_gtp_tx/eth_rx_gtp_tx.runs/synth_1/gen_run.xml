@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1533202906">
+  <File Type="PA-TCL" Name="eth_rx_gp_tx_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="eth_rx_gp_tx_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="eth_rx_gp_tx_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="eth_rx_gp_tx_top.vds"/>
+  <File Type="RDS-UTIL" Name="eth_rx_gp_tx_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="eth_rx_gp_tx_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="eth_rx_gp_tx_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="eth_rx_gp_tx_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="eth_rx_gp_tx_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/aurora_8b10b_tx/aurora_8b10b_tx.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../video_trans_sourcecode/ip_new/aurora_8b10b_tx/aurora_8b10b_tx.xci"/>
+        <Attr Name="ImportTime" Val="1530949628"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../video_trans_sourcecode/ip_new/axis_dwidth_converter_0/axis_dwidth_converter_0.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/eth_rx_gtp_tx_fifo/eth_rx_gtp_tx_fifo.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../video_trans_sourcecode/ip_new/eth_rx_gtp_tx_fifo/eth_rx_gtp_tx_fifo.xci"/>
+        <Attr Name="ImportTime" Val="1530799856"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/tri_mode_ethernet_mac_0/tri_mode_ethernet_mac_0.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../video_trans_sourcecode/ip_new/tri_mode_ethernet_mac_0/tri_mode_ethernet_mac_0.xci"/>
+        <Attr Name="ImportTime" Val="1529228030"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/global_clock_generation/global_clock_generation.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../video_trans_sourcecode/ip_new/global_clock_generation/global_clock_generation.xci"/>
+        <Attr Name="ImportTime" Val="1530845665"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/eth_rx_gtp_tx/clock_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../video_trans_sourcecode/src_new/eth_rx_gtp_tx/clock_gen.v"/>
+        <Attr Name="ImportTime" Val="1532142390"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/eth_rx_gtp_tx/reset_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../video_trans_sourcecode/src_new/eth_rx_gtp_tx/reset_gen.v"/>
+        <Attr Name="ImportTime" Val="1532767927"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/eth_rx_gtp_tx/s_axi_lite_control_generate.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../video_trans_sourcecode/src_new/eth_rx_gtp_tx/s_axi_lite_control_generate.v"/>
+        <Attr Name="ImportTime" Val="1532779843"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/eth_rx_gtp_tx/syn_block.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../video_trans_sourcecode/src_new/eth_rx_gtp_tx/syn_block.v"/>
+        <Attr Name="ImportTime" Val="1528805072"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/eth_rx_gtp_tx/eth_rx_gp_tx_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../video_trans_sourcecode/src_new/eth_rx_gtp_tx/eth_rx_gp_tx_top.v"/>
+        <Attr Name="ImportTime" Val="1533010124"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="eth_rx_gp_tx_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/eth_rx_gp_tx/eth_rx_gp_tx_top_cons_auto.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../video_trans_sourcecode/cons_new/eth_rx_gp_tx/eth_rx_gp_tx_top_cons_auto.xdc"/>
+        <Attr Name="ImportTime" Val="1533004191"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/eth_rx_gp_tx/eth_rx_gp_tx_top_pin_cons.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../video_trans_sourcecode/cons_new/eth_rx_gp_tx/eth_rx_gp_tx_top_pin_cons.xdc"/>
+        <Attr Name="ImportTime" Val="1533010148"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/imports/eth_rx_gp_tx/eth_rx_gp_tx_top_time_cons.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../video_trans_sourcecode/cons_new/eth_rx_gp_tx/eth_rx_gp_tx_top_time_cons.xdc"/>
+        <Attr Name="ImportTime" Val="1533005582"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/eth_rx_gp_tx/eth_rx_gp_tx_top_cons_auto.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

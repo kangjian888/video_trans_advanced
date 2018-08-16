@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Aug  1 20:04:26 2018
+# Process ID: 37352
+# Current directory: C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_tx_gp_rx/eth_tx_gp_rx.runs/impl_1
+# Command line: vivado.exe -log eth_tx_gp_rx_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source eth_tx_gp_rx_top.tcl -notrace
+# Log file: C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_tx_gp_rx/eth_tx_gp_rx.runs/impl_1/eth_tx_gp_rx_top.vdi
+# Journal file: C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_tx_gp_rx/eth_tx_gp_rx.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source eth_tx_gp_rx_top.tcl -notrace
+Command: open_checkpoint eth_tx_gp_rx_top_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 240.879 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 446 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clock_gen_0/global_clock_generation_0/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_tx_gp_rx/eth_tx_gp_rx.runs/impl_1/.Xil/Vivado-15768-DESKTOP-B3RT09T/dcp7/global_clock_generation.edf:377]
+Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_tx_gp_rx/eth_tx_gp_rx.runs/impl_1/.Xil/Vivado-37352-DESKTOP-B3RT09T/dcp1/eth_tx_gp_rx_top_board.xdc]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_tx_gp_rx/eth_tx_gp_rx.runs/impl_1/.Xil/Vivado-37352-DESKTOP-B3RT09T/dcp1/eth_tx_gp_rx_top_board.xdc]
+Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_tx_gp_rx/eth_tx_gp_rx.runs/impl_1/.Xil/Vivado-37352-DESKTOP-B3RT09T/dcp1/eth_tx_gp_rx_top_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/global_clock_generation/global_clock_generation.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/global_clock_generation/global_clock_generation.xdc:57]
+get_clocks: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1338.863 ; gain = 611.285
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_tx_gp_rx/eth_tx_gp_rx.runs/impl_1/.Xil/Vivado-37352-DESKTOP-B3RT09T/dcp1/eth_tx_gp_rx_top_early.xdc]
+Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_tx_gp_rx/eth_tx_gp_rx.runs/impl_1/.Xil/Vivado-37352-DESKTOP-B3RT09T/dcp1/eth_tx_gp_rx_top.xdc]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_tx_gp_rx/eth_tx_gp_rx.runs/impl_1/.Xil/Vivado-37352-DESKTOP-B3RT09T/dcp1/eth_tx_gp_rx_top.xdc]
+Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_tx_gp_rx/eth_tx_gp_rx.runs/impl_1/.Xil/Vivado-37352-DESKTOP-B3RT09T/dcp1/eth_tx_gp_rx_top_late.xdc]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'tri_mode_ethernet_mac_1_0/inst_rgmii_rx_clk' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_clocks.xdc:29]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_tx_gp_rx/eth_tx_gp_rx.runs/impl_1/.Xil/Vivado-37352-DESKTOP-B3RT09T/dcp1/eth_tx_gp_rx_top_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1355.133 ; gain = 13.086
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1355.133 ; gain = 13.086
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 123 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 32 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 73 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 11 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2017.4 (64-bit) build 2086221
+open_checkpoint: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1355.133 ; gain = 1123.316
+Command: write_bitstream -force eth_tx_gp_rx_top.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RTSTAT-10] No routable loads: 24 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, eth_tx_gtp_rx_fifo_0/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, eth_tx_gtp_rx_fifo_0/U0/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13], u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[14]... and (the first 15 of 22 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./eth_tx_gp_rx_top.bit...
+Writing bitstream ./eth_tx_gp_rx_top.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+22 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:53 ; elapsed = 00:00:45 . Memory (MB): peak = 1938.566 ; gain = 582.867
+INFO: [Common 17-206] Exiting Vivado at Wed Aug  1 20:05:53 2018...

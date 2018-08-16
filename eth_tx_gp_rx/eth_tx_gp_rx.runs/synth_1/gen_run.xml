@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1533115181">
+  <File Type="PA-TCL" Name="eth_tx_gp_rx_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="eth_tx_gp_rx_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="eth_tx_gp_rx_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="eth_tx_gp_rx_top.vds"/>
+  <File Type="RDS-UTIL" Name="eth_tx_gp_rx_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="eth_tx_gp_rx_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="eth_tx_gp_rx_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="eth_tx_gp_rx_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="eth_tx_gp_rx_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../video_trans_sourcecode/ip_new/tri_mode_ethernet_mac_1/tri_mode_ethernet_mac_1.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../video_trans_sourcecode/ip_new/axis_dwidth_converter_1/axis_dwidth_converter_1.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../video_trans_sourcecode/ip_new/eth_tx_gtp_rx_fifo/eth_tx_gtp_rx_fifo.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../video_trans_sourcecode/ip_new/global_clock_generation/global_clock_generation.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../video_trans_sourcecode/src_new/eth_tx_gtp_rx/clock_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../video_trans_sourcecode/src_new/eth_tx_gtp_rx/reset_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../video_trans_sourcecode/src_new/eth_tx_gtp_rx/s_axi_lite_control_generate.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../video_trans_sourcecode/src_new/eth_tx_gtp_rx/syn_block.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../video_trans_sourcecode/src_new/eth_tx_gtp_rx/eth_tx_gp_rx_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="eth_tx_gp_rx_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../video_trans_sourcecode/cons_new/eth_tx_gp_rx/eth_tx_gp_rx_top_pin_cons.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../video_trans_sourcecode/cons_new/eth_tx_gp_rx/eth_tx_gp_rx_top_time_cons.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../video_trans_sourcecode/cons_new/eth_tx_gp_rx/eth_tx_gp_rx_top_auto.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../video_trans_sourcecode/cons_new/eth_tx_gp_rx/eth_tx_gp_rx_top_auto.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

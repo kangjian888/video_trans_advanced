@@ -1,0 +1,659 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Aug  2 17:41:50 2018
+# Process ID: 8916
+# Current directory: C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1
+# Command line: vivado.exe -log eth_rx_gp_tx_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source eth_rx_gp_tx_top.tcl
+# Log file: C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/eth_rx_gp_tx_top.vds
+# Journal file: C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source eth_rx_gp_tx_top.tcl -notrace
+Command: synth_design -top eth_rx_gp_tx_top -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17700 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 440.996 ; gain = 107.309
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'eth_rx_gp_tx_top' [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/eth_rx_gp_tx_top.v:8]
+INFO: [Synth 8-638] synthesizing module 'clock_gen' [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/clock_gen.v:9]
+INFO: [Synth 8-638] synthesizing module 'IBUFDS' [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19483]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter DQS_BIAS bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS' (1#1) [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19483]
+INFO: [Synth 8-638] synthesizing module 'BUFGCE' [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:617]
+	Parameter CE_TYPE bound to: SYNC - type: string 
+	Parameter IS_CE_INVERTED bound to: 1'b0 
+	Parameter IS_I_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'BUFGCE' (2#1) [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:617]
+INFO: [Synth 8-638] synthesizing module 'syn_block' [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/syn_block.v:13]
+	Parameter INITIALISE bound to: 1'b0 
+	Parameter DEPTH bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FDRE' [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:3964]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDRE' (3#1) [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:3964]
+INFO: [Synth 8-256] done synthesizing module 'syn_block' (4#1) [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/syn_block.v:13]
+INFO: [Synth 8-638] synthesizing module 'global_clock_generation' [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/realtime/global_clock_generation_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'global_clock_generation' (5#1) [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/realtime/global_clock_generation_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clock_gen' (6#1) [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/clock_gen.v:9]
+INFO: [Synth 8-638] synthesizing module 'reset_gen' [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/reset_gen.v:11]
+INFO: [Synth 8-256] done synthesizing module 'reset_gen' (7#1) [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/reset_gen.v:11]
+INFO: [Synth 8-638] synthesizing module 'tri_mode_ethernet_mac_0' [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/realtime/tri_mode_ethernet_mac_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'tri_mode_ethernet_mac_0' (8#1) [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/realtime/tri_mode_ethernet_mac_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'tri_mode_ethernet_mac_0_0' of module 'tri_mode_ethernet_mac_0' requires 61 connections, but only 56 given [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/eth_rx_gp_tx_top.v:207]
+INFO: [Synth 8-638] synthesizing module 's_axi_lite_control_generate' [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/s_axi_lite_control_generate.v:11]
+	Parameter STARTUP bound to: 0 - type: integer 
+	Parameter UPDATE_SPEED bound to: 1 - type: integer 
+	Parameter MDIO_RD bound to: 2 - type: integer 
+	Parameter MDIO_POLL_CHECK bound to: 3 - type: integer 
+	Parameter MDIO_1G bound to: 4 - type: integer 
+	Parameter MDIO_10_100 bound to: 5 - type: integer 
+	Parameter MDIO_PAGE2 bound to: 6 - type: integer 
+	Parameter MDIO_DELAY_RD bound to: 9 - type: integer 
+	Parameter MDIO_DELAY_RD_POLL bound to: 10 - type: integer 
+	Parameter MDIO_DELAY bound to: 11 - type: integer 
+	Parameter MDIO_RESTART bound to: 12 - type: integer 
+	Parameter MDIO_STATS bound to: 14 - type: integer 
+	Parameter MDIO_STATS_POLL_CHECK bound to: 15 - type: integer 
+	Parameter RESET_MAC_TX bound to: 16 - type: integer 
+	Parameter RESET_MAC_RX bound to: 17 - type: integer 
+	Parameter CNFG_MDIO bound to: 18 - type: integer 
+	Parameter CNFG_FLOW bound to: 19 - type: integer 
+	Parameter CNFG_FILTER bound to: 22 - type: integer 
+	Parameter ENABLE_FILTER bound to: 23 - type: integer 
+	Parameter CNFG_FRM_DES_1 bound to: 24 - type: integer 
+	Parameter CNFG_FRM_DES_2 bound to: 25 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter SET_DATA bound to: 1 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000010 
+	Parameter POLL bound to: 3 - type: integer 
+	Parameter READ bound to: 1 - type: integer 
+	Parameter WRITE bound to: 2 - type: integer 
+	Parameter DONE bound to: 3 - type: integer 
+	Parameter CONFIG_MANAGEMENT_ADD bound to: 17'b00000010100000000 
+	Parameter CONFIG_FLOW_CTRL_ADD bound to: 17'b00000010000001100 
+	Parameter RECEIVER_ADD bound to: 17'b00000010000000100 
+	Parameter TRANSMITTER_ADD bound to: 17'b00000010000001000 
+	Parameter SPEED_CONFIG_ADD bound to: 17'b00000010000010000 
+	Parameter CONFIG_UNI0_CTRL_ADD bound to: 17'b00000011100000000 
+	Parameter CONFIG_UNI1_CTRL_ADD bound to: 17'b00000011100000100 
+	Parameter CONFIG_ADDR_CTRL_ADD bound to: 17'b00000011100001000 
+	Parameter CONFIG_ADDR_ENABLE_ADD bound to: 17'b00000011100001100 
+	Parameter CONFIG_FRAME_FILTER_1 bound to: 17'b00000011100010000 
+	Parameter CONFIG_FRAME_FILTER_2 bound to: 17'b00000011100010100 
+	Parameter CONFIG_FRAME_FILTER_3 bound to: 17'b00000011100011000 
+	Parameter CONFIG_FRAME_FILTER_MASK_1 bound to: 17'b00000011101010000 
+	Parameter CONFIG_FRAME_FILTER_MASK_2 bound to: 17'b00000011101010100 
+	Parameter CONFIG_FRAME_FILTER_MASK_3 bound to: 17'b00000011101011000 
+	Parameter MDIO_CONTROL bound to: 17'b00000010100000100 
+	Parameter MDIO_TX_DATA bound to: 17'b00000010100001000 
+	Parameter MDIO_RX_DATA bound to: 17'b00000010100001100 
+	Parameter MDIO_OP_RD bound to: 2'b10 
+	Parameter MDIO_OP_WR bound to: 2'b01 
+	Parameter PHY_ADDR bound to: 8'b00000111 
+	Parameter PHY_CONTROL_REG bound to: 8'b00000000 
+	Parameter PHY_STATUS_REG bound to: 8'b00000001 
+	Parameter PHY_ABILITY_REG bound to: 8'b00000100 
+	Parameter PHY_1000BASET_CONTROL_REG bound to: 8'b00001001 
+	Parameter PHY_MODE_CTL_REG bound to: 8'b00010101 
+	Parameter PHY_PAGE_REG bound to: 8'b00010110 
+INFO: [Synth 8-256] done synthesizing module 's_axi_lite_control_generate' (9#1) [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/s_axi_lite_control_generate.v:11]
+INFO: [Synth 8-638] synthesizing module 'eth_rx_gtp_tx_fifo' [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/realtime/eth_rx_gtp_tx_fifo_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'eth_rx_gtp_tx_fifo' (10#1) [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/realtime/eth_rx_gtp_tx_fifo_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'axis_dwidth_converter_0' [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/realtime/axis_dwidth_converter_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'axis_dwidth_converter_0' (11#1) [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/realtime/axis_dwidth_converter_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_tx' [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/realtime/aurora_8b10b_tx_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_tx' (12#1) [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/realtime/aurora_8b10b_tx_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'eth_rx_gp_tx_top' (13#1) [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/eth_rx_gp_tx_top.v:8]
+WARNING: [Synth 8-3331] design s_axi_lite_control_generate has unconnected port s_axi_bresp[1]
+WARNING: [Synth 8-3331] design s_axi_lite_control_generate has unconnected port s_axi_bresp[0]
+WARNING: [Synth 8-3331] design s_axi_lite_control_generate has unconnected port s_axi_rresp[1]
+WARNING: [Synth 8-3331] design s_axi_lite_control_generate has unconnected port s_axi_rresp[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 494.113 ; gain = 160.426
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 494.113 ; gain = 160.426
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp5/aurora_8b10b_tx_in_context.xdc] for cell 'aurora_8b10b_tx_0'
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp5/aurora_8b10b_tx_in_context.xdc] for cell 'aurora_8b10b_tx_0'
+Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp6/axis_dwidth_converter_0_in_context.xdc] for cell 'axis_dwidth_converter_0_0'
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp6/axis_dwidth_converter_0_in_context.xdc] for cell 'axis_dwidth_converter_0_0'
+Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp7/eth_rx_gtp_tx_fifo_in_context.xdc] for cell 'eth_rx_gtp_tx_fifo_0'
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp7/eth_rx_gtp_tx_fifo_in_context.xdc] for cell 'eth_rx_gtp_tx_fifo_0'
+Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc] for cell 'tri_mode_ethernet_mac_0_0'
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc] for cell 'tri_mode_ethernet_mac_0_0'
+Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp9/global_clock_generation_in_context.xdc] for cell 'clock_gen_0/global_clock_generation_0'
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp9/global_clock_generation_in_context.xdc] for cell 'clock_gen_0/global_clock_generation_0'
+Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/constrs_1/imports/eth_rx_gp_tx/eth_rx_gp_tx_top_cons_auto.xdc]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/constrs_1/imports/eth_rx_gp_tx/eth_rx_gp_tx_top_cons_auto.xdc]
+Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/constrs_1/imports/eth_rx_gp_tx/eth_rx_gp_tx_top_pin_cons.xdc]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/constrs_1/imports/eth_rx_gp_tx/eth_rx_gp_tx_top_pin_cons.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/constrs_1/imports/eth_rx_gp_tx/eth_rx_gp_tx_top_pin_cons.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/eth_rx_gp_tx_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/eth_rx_gp_tx_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/constrs_1/imports/eth_rx_gp_tx/eth_rx_gp_tx_top_time_cons.xdc]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/constrs_1/imports/eth_rx_gp_tx/eth_rx_gp_tx_top_time_cons.xdc]
+Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGCE => BUFGCTRL: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 883.504 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'axis_dwidth_converter_0_0' at clock pin 'aclk' is different from the actual clock period '40.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'eth_rx_gtp_tx_fifo_0' at clock pin 's_aclk' is different from the actual clock period '8.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 883.504 ; gain = 549.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 883.504 ; gain = 549.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for MDC. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MDC. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for MDIO. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for MDIO. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_RX_CTL. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_RX_CTL. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_RXC. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_RXC. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_RXD[0]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_RXD[0]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_RXD[1]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_RXD[1]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_RXD[2]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_RXD[2]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_RXD[3]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_RXD[3]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_TX_CTL. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_TX_CTL. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_TXC. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_TXC. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_TXD[0]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_TXD[0]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_TXD[1]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_TXD[1]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_TXD[2]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_TXD[2]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for RGMII_TXD[3]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RGMII_TXD[3]. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/.Xil/Vivado-8916-DESKTOP-B3RT09T/dcp8/tri_mode_ethernet_mac_0_in_context.xdc}, line 34).
+Applied set_property DONT_TOUCH = true for aurora_8b10b_tx_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for axis_dwidth_converter_0_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clock_gen_0/global_clock_generation_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for eth_rx_gtp_tx_fifo_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for tri_mode_ethernet_mac_0_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 883.504 ; gain = 549.816
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element phy_reset_count_reg was removed.  [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/reset_gen.v:114]
+INFO: [Synth 8-802] inferred FSM for state register 'axi_state_reg' in module 's_axi_lite_control_generate'
+INFO: [Synth 8-5544] ROM "mdio_access_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "axi_access_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "axi_access_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_arvalid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "axi_status" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_awaddr" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axi_awvalid" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "axi_status" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "start_mdio" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "drive_mdio" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "axi_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "axi_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 STARTUP |                            00000 |                           000000
+            UPDATE_SPEED |                            00001 |                           000001
+                 MDIO_RD |                            00010 |                           000010
+         MDIO_POLL_CHECK |                            00011 |                           000011
+                 MDIO_1G |                            00100 |                           000100
+             MDIO_10_100 |                            00101 |                           000101
+              MDIO_PAGE2 |                            00110 |                           000110
+           MDIO_DELAY_RD |                            00111 |                           001001
+      MDIO_DELAY_RD_POLL |                            01000 |                           001010
+              MDIO_DELAY |                            01001 |                           001011
+            MDIO_RESTART |                            01010 |                           001100
+              MDIO_STATS |                            01011 |                           001110
+   MDIO_STATS_POLL_CHECK |                            01100 |                           001111
+            RESET_MAC_RX |                            01101 |                           010001
+            RESET_MAC_TX |                            01110 |                           010000
+               CNFG_MDIO |                            01111 |                           010010
+               CNFG_FLOW |                            10000 |                           010011
+           ENABLE_FILTER |                            10001 |                           010111
+             CNFG_FILTER |                            10010 |                           010110
+          CNFG_FRM_DES_1 |                            10011 |                           011000
+          CNFG_FRM_DES_2 |                            10100 |                           011001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_state_reg' using encoding 'sequential' in module 's_axi_lite_control_generate'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 883.504 ; gain = 549.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               21 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	  21 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	  21 Input     17 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 10    
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	  21 Input      8 Bit        Muxes := 1     
+	  24 Input      5 Bit        Muxes := 1     
+	  21 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 21    
+	  21 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module eth_rx_gp_tx_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module clock_gen 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module reset_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
+Module s_axi_lite_control_generate 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	               21 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	  21 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	  21 Input     17 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 10    
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	  21 Input      8 Bit        Muxes := 1     
+	  24 Input      5 Bit        Muxes := 1     
+	  21 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 21    
+	  21 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element reset_gen_0/eth_gtx_reset_pren_reg was removed.  [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/reset_gen.v:99]
+WARNING: [Synth 8-6014] Unused sequential element reset_gen_0/eth_gtx_resetn_reg was removed.  [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/reset_gen.v:100]
+INFO: [Synth 8-5544] ROM "s_axi_lite_control_generate_0/s_axi_awaddr" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element reset_gen_0/phy_reset_count_reg was removed.  [C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.srcs/sources_1/imports/eth_rx_gtp_tx/reset_gen.v:114]
+WARNING: [Synth 8-3917] design eth_rx_gp_tx_top has port SFP_MGT_CLK_SEL0 driven by constant 0
+WARNING: [Synth 8-3917] design eth_rx_gp_tx_top has port SFP_MGT_CLK_SEL1 driven by constant 0
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/mdio_reg_addr_reg[5]' (FDRE) to 's_axi_lite_control_generate_0/mdio_reg_addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/mdio_reg_addr_reg[6]' (FDRE) to 's_axi_lite_control_generate_0/mdio_reg_addr_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s_axi_lite_control_generate_0/mdio_reg_addr_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s_axi_lite_control_generate_0/speed_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\s_axi_lite_control_generate_0/speed_reg[1] )
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/axi_wr_data_reg[16]' (FDRE) to 's_axi_lite_control_generate_0/axi_wr_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/axi_wr_data_reg[17]' (FDRE) to 's_axi_lite_control_generate_0/axi_wr_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/axi_wr_data_reg[18]' (FDRE) to 's_axi_lite_control_generate_0/axi_wr_data_reg[19]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/axi_wr_data_reg[19]' (FDRE) to 's_axi_lite_control_generate_0/axi_wr_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/axi_wr_data_reg[20]' (FDRE) to 's_axi_lite_control_generate_0/axi_wr_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/axi_wr_data_reg[21]' (FDRE) to 's_axi_lite_control_generate_0/axi_wr_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/axi_wr_data_reg[22]' (FDRE) to 's_axi_lite_control_generate_0/axi_wr_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/axi_wr_data_reg[23]' (FDRE) to 's_axi_lite_control_generate_0/axi_wr_data_reg[24]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/axi_wr_data_reg[24]' (FDRE) to 's_axi_lite_control_generate_0/axi_wr_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/axi_wr_data_reg[25]' (FDRE) to 's_axi_lite_control_generate_0/axi_wr_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/axi_wr_data_reg[26]' (FDRE) to 's_axi_lite_control_generate_0/axi_wr_data_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s_axi_lite_control_generate_0/axi_wr_data_reg[29] )
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/addr_reg[0]' (FDRE) to 's_axi_lite_control_generate_0/addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/addr_reg[12]' (FDRE) to 's_axi_lite_control_generate_0/addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/addr_reg[13]' (FDRE) to 's_axi_lite_control_generate_0/addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/addr_reg[14]' (FDRE) to 's_axi_lite_control_generate_0/addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/addr_reg[15]' (FDRE) to 's_axi_lite_control_generate_0/addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/addr_reg[16]' (FDRE) to 's_axi_lite_control_generate_0/addr_reg[1]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/addr_reg[1]' (FDRE) to 's_axi_lite_control_generate_0/addr_reg[5]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/addr_reg[5]' (FDRE) to 's_axi_lite_control_generate_0/addr_reg[6]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/addr_reg[6]' (FDRE) to 's_axi_lite_control_generate_0/addr_reg[7]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/addr_reg[7]' (FDRE) to 's_axi_lite_control_generate_0/addr_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s_axi_lite_control_generate_0/addr_reg[11] )
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/s_axi_araddr_reg[0]' (FDRE) to 's_axi_lite_control_generate_0/s_axi_araddr_reg[1]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/s_axi_araddr_reg[1]' (FDRE) to 's_axi_lite_control_generate_0/s_axi_araddr_reg[5]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/s_axi_araddr_reg[5]' (FDRE) to 's_axi_lite_control_generate_0/s_axi_araddr_reg[6]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/s_axi_araddr_reg[6]' (FDRE) to 's_axi_lite_control_generate_0/s_axi_araddr_reg[7]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/s_axi_araddr_reg[7]' (FDRE) to 's_axi_lite_control_generate_0/s_axi_araddr_reg[11]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/mdio_wr_data_reg[21]' (FDE) to 's_axi_lite_control_generate_0/mdio_wr_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/mdio_wr_data_reg[22]' (FDE) to 's_axi_lite_control_generate_0/mdio_wr_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/mdio_wr_data_reg[23]' (FDE) to 's_axi_lite_control_generate_0/mdio_wr_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/mdio_wr_data_reg[24]' (FDE) to 's_axi_lite_control_generate_0/mdio_wr_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/mdio_wr_data_reg[29]' (FDE) to 's_axi_lite_control_generate_0/mdio_wr_data_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s_axi_lite_control_generate_0/mdio_wr_data_reg[30] )
+INFO: [Synth 8-3886] merging instance 's_axi_lite_control_generate_0/s_axi_wdata_reg[24]' (FDRE) to 's_axi_lite_control_generate_0/s_axi_wdata_reg[26]'
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/speed_reg[1]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/speed_reg[0]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[31]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[30]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[29]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[28]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[27]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[26]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[25]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[24]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[23]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[22]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[21]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[20]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[19]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[18]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_rd_data_reg[17]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/addr_reg[11]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/s_axi_awaddr_reg[11]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/s_axi_awaddr_reg[7]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/s_axi_awaddr_reg[6]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/s_axi_awaddr_reg[5]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/s_axi_awaddr_reg[1]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/s_axi_awaddr_reg[0]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_wr_data_reg[30]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/axi_wr_data_reg[29]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/mdio_reg_addr_reg[7]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/mdio_wr_data_reg[30]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/s_axi_wdata_reg[30]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/s_axi_wdata_reg[29]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/s_axi_wdata_reg[23]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/s_axi_wdata_reg[22]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/s_axi_wdata_reg[21]) is unused and will be removed from module eth_rx_gp_tx_top.
+WARNING: [Synth 8-3332] Sequential element (s_axi_lite_control_generate_0/s_axi_araddr_reg[11]) is unused and will be removed from module eth_rx_gp_tx_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 883.504 ; gain = 549.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'aurora_8b10b_tx_0/gt_refclk1_out' to pin 'aurora_8b10b_tx_0/bbstub_gt_refclk1_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'aurora_8b10b_tx_0/sync_clk_out' to pin 'aurora_8b10b_tx_0/bbstub_sync_clk_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'aurora_8b10b_tx_0/user_clk_out' to pin 'aurora_8b10b_tx_0/bbstub_user_clk_out/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'tri_mode_ethernet_mac_0_0/rgmii_txc' to pin 'tri_mode_ethernet_mac_0_0/bbstub_rgmii_txc/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'tri_mode_ethernet_mac_0_0/rx_mac_aclk' to pin 'tri_mode_ethernet_mac_0_0/bbstub_rx_mac_aclk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'tri_mode_ethernet_mac_0_0/gtx_clk90_out' to pin 'tri_mode_ethernet_mac_0_0/bbstub_gtx_clk90_out/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'tri_mode_ethernet_mac_0_0/gtx_clk' to 'i_17/reset_gen_0/phy_reset_count_reg[0]/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'tri_mode_ethernet_mac_0_0/gtx_clk_out' to pin 'tri_mode_ethernet_mac_0_0/bbstub_gtx_clk_out/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'tri_mode_ethernet_mac_0_0/gtx_clk' to 'i_17/reset_gen_0/phy_reset_count_reg[0]/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'tri_mode_ethernet_mac_0_0/tx_mac_aclk' to pin 'tri_mode_ethernet_mac_0_0/bbstub_tx_mac_aclk/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'tri_mode_ethernet_mac_0_0/gtx_clk' to 'i_17/reset_gen_0/phy_reset_count_reg[0]/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_gen_0/global_clock_generation_0/clk_in1' to pin 'clock_gen_0/bufgce_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_gen_0/global_clock_generation_0/clk_out1' to pin 'clock_gen_0/global_clock_generation_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clock_gen_0/global_clock_generation_0/clk_in1' to 'clock_gen_0/dcm_locked_edge_reg/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_gen_0/global_clock_generation_0/clk_out2' to pin 'clock_gen_0/global_clock_generation_0/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clock_gen_0/global_clock_generation_0/clk_in1' to 'clock_gen_0/dcm_locked_edge_reg/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_gen_0/global_clock_generation_0/clk_out3' to pin 'clock_gen_0/global_clock_generation_0/bbstub_clk_out3/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clock_gen_0/global_clock_generation_0/clk_in1' to 'clock_gen_0/dcm_locked_edge_reg/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_gen_0/global_clock_generation_0/clk_out4' to pin 'clock_gen_0/global_clock_generation_0/bbstub_clk_out4/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clock_gen_0/global_clock_generation_0/clk_in1' to 'clock_gen_0/dcm_locked_edge_reg/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clock_gen_0/global_clock_generation_0/clk_out5' to pin 'clock_gen_0/global_clock_generation_0/bbstub_clk_out5/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clock_gen_0/global_clock_generation_0/clk_in1' to 'clock_gen_0/dcm_locked_edge_reg/C'
+INFO: [Synth 8-5819] Moved 15 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 883.504 ; gain = 549.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 883.504 ; gain = 549.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 889.055 ; gain = 555.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 889.055 ; gain = 555.367
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 889.055 ; gain = 555.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 889.055 ; gain = 555.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 889.055 ; gain = 555.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 889.055 ; gain = 555.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 889.055 ; gain = 555.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name      | RTL Name                                          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|eth_rx_gp_tx_top | s_axi_lite_control_generate_0/count_shift_reg[20] | 21     | 1     | NO           | NO                 | YES               | 0      | 1       | 
++-----------------+---------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------+----------+
+|      |BlackBox name           |Instances |
++------+------------------------+----------+
+|1     |tri_mode_ethernet_mac_0 |         1|
+|2     |eth_rx_gtp_tx_fifo      |         1|
+|3     |axis_dwidth_converter_0 |         1|
+|4     |aurora_8b10b_tx         |         1|
+|5     |global_clock_generation |         1|
++------+------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------+------+
+|      |Cell                    |Count |
++------+------------------------+------+
+|1     |aurora_8b10b_tx         |     1|
+|2     |axis_dwidth_converter_0 |     1|
+|3     |eth_rx_gtp_tx_fifo      |     1|
+|4     |global_clock_generation |     1|
+|5     |tri_mode_ethernet_mac_0 |     1|
+|6     |BUFGCE                  |     1|
+|7     |LUT1                    |     7|
+|8     |LUT2                    |    36|
+|9     |LUT3                    |    48|
+|10    |LUT4                    |    18|
+|11    |LUT5                    |    40|
+|12    |LUT6                    |    51|
+|13    |SRLC32E                 |     1|
+|14    |FDRE                    |   182|
+|15    |IBUF                    |     3|
+|16    |IBUFDS                  |     1|
+|17    |OBUF                    |     8|
++------+------------------------+------+
+
+Report Instance Areas: 
++------+--------------------------------+----------------------------+------+
+|      |Instance                        |Module                      |Cells |
++------+--------------------------------+----------------------------+------+
+|1     |top                             |                            |   610|
+|2     |  clock_gen_0                   |clock_gen                   |    22|
+|3     |    syn_block_0                 |syn_block__1                |     5|
+|4     |    syn_block_1                 |syn_block__2                |     5|
+|5     |  reset_gen_0                   |reset_gen                   |    43|
+|6     |    syn_block_0                 |syn_block__3                |     5|
+|7     |    syn_block_1                 |syn_block__4                |     5|
+|8     |    syn_block_2                 |syn_block__5                |     5|
+|9     |    syn_block_3                 |syn_block                   |     5|
+|10    |  s_axi_lite_control_generate_0 |s_axi_lite_control_generate |   321|
++------+--------------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 889.055 ; gain = 555.367
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 40 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 889.055 ; gain = 165.977
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 889.055 ; gain = 555.367
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGCE => BUFGCTRL: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+118 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 891.793 ; gain = 558.105
+INFO: [Common 17-1381] The checkpoint 'C:/Users/KANG Jian/Desktop/video_trans_advanced/eth_rx_gtp_tx/eth_rx_gtp_tx.runs/synth_1/eth_rx_gp_tx_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file eth_rx_gp_tx_top_utilization_synth.rpt -pb eth_rx_gp_tx_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 891.793 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  2 17:42:50 2018...

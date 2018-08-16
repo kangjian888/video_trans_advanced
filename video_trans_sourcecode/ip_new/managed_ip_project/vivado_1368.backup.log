@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Jul 21 10:25:09 2018
+# Process ID: 1368
+# Current directory: C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10580 C:\Users\KANG Jian\Desktop\video_trans_advanced\video_trans_sourcecode\ip_new\managed_ip_project\managed_ip_project.xpr
+# Log file: C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/vivado.log
+# Journal file: C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 889.859 ; gain = 127.871
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+ERROR: [Ipptcl 7-32] Invalid text 'rx_eq_mode_text'.
+ERROR: [Common 17-39] 'get_textspec' failed due to earlier errors.
+ERROR: [IP_Flow 19-3554] GUI update of parameter PARAM_VALUE.RX_EQ_MODE failed.ERROR: [Common 17-39] 'get_textspec' failed due to earlier errors.
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 21 14:07:15 2018...

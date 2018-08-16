@@ -1,0 +1,1170 @@
+
+*** Running vivado
+    with args -log aurora_8b10b_rx.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source aurora_8b10b_rx.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source aurora_8b10b_rx.tcl -notrace
+Command: synth_design -top aurora_8b10b_rx -part xc7a200tfbg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22376 
+WARNING: [Synth 8-2507] parameter declaration becomes local in aurora_8b10b_rx_GT_WRAPPER with formal parameter declaration list [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_transceiver_wrapper.v:219]
+WARNING: [Synth 8-2507] parameter declaration becomes local in aurora_8b10b_rx_GT_WRAPPER with formal parameter declaration list [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_transceiver_wrapper.v:221]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 446.211 ; gain = 116.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx.v:54]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_support' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_support.v:53]
+INFO: [Synth 8-638] synthesizing module 'IBUFDS_GTE2' [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19620]
+	Parameter CLKCM_CFG bound to: TRUE - type: string 
+	Parameter CLKRCV_TRST bound to: TRUE - type: string 
+	Parameter CLKSWING_CFG bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'IBUFDS_GTE2' (1#1) [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:19620]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_CLOCK_MODULE' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_clock_module.v:62]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (2#1) [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_CLOCK_MODULE' (3#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_clock_module.v:62]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_cdc_sync' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:104]
+	Parameter c_cdc_type bound to: 2'b01 
+	Parameter c_flop_input bound to: 1'b0 
+	Parameter c_reset_state bound to: 1'b0 
+	Parameter c_single_bit bound to: 1'b1 
+	Parameter c_vector_width bound to: 6'b000010 
+	Parameter c_mtbf_stages bound to: 3'b011 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:129]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:130]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:131]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:132]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:133]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:134]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:135]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:138]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:139]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:140]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:141]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:142]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:143]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:145]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:150]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:151]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:152]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:153]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:154]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:155]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_cdc_sync' (4#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:104]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_SUPPORT_RESET_LOGIC' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_support_reset_logic.v:62]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "true" *) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_support_reset_logic.v:84]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_cdc_sync__parameterized0' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:104]
+	Parameter c_cdc_type bound to: 2'b01 
+	Parameter c_flop_input bound to: 1'b1 
+	Parameter c_reset_state bound to: 1'b0 
+	Parameter c_single_bit bound to: 1'b1 
+	Parameter c_vector_width bound to: 6'b000010 
+	Parameter c_mtbf_stages bound to: 3'b011 
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_cdc_sync__parameterized0' (4#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_cdc_sync.v:104]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_SUPPORT_RESET_LOGIC' (5#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_support_reset_logic.v:62]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_gt_common_wrapper' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_gt_common_wrapper.v:56]
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter PLL0_FBDIV_IN bound to: 4 - type: integer 
+	Parameter PLL1_FBDIV_IN bound to: 4 - type: integer 
+	Parameter PLL0_FBDIV_45_IN bound to: 4 - type: integer 
+	Parameter PLL1_FBDIV_45_IN bound to: 5 - type: integer 
+	Parameter PLL0_REFCLK_DIV_IN bound to: 1 - type: integer 
+	Parameter PLL1_REFCLK_DIV_IN bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'GTPE2_COMMON' [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:9987]
+	Parameter BIAS_CFG bound to: 64'b0000000000000000000000000000000000000000000001010000000000000001 
+	Parameter COMMON_CFG bound to: 0 - type: integer 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK0_INVERTED bound to: 1'b0 
+	Parameter IS_GTGREFCLK1_INVERTED bound to: 1'b0 
+	Parameter IS_PLL0LOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter IS_PLL1LOCKDETCLK_INVERTED bound to: 1'b0 
+	Parameter PLL0_CFG bound to: 27'b000000111110000001111011100 
+	Parameter PLL0_DMON_CFG bound to: 1'b0 
+	Parameter PLL0_FBDIV bound to: 4 - type: integer 
+	Parameter PLL0_FBDIV_45 bound to: 4 - type: integer 
+	Parameter PLL0_INIT_CFG bound to: 24'b000000000000000000011110 
+	Parameter PLL0_LOCK_CFG bound to: 9'b111101000 
+	Parameter PLL0_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter PLL1_CFG bound to: 27'b000000111110000001111011100 
+	Parameter PLL1_DMON_CFG bound to: 1'b0 
+	Parameter PLL1_FBDIV bound to: 4 - type: integer 
+	Parameter PLL1_FBDIV_45 bound to: 5 - type: integer 
+	Parameter PLL1_INIT_CFG bound to: 24'b000000000000000000011110 
+	Parameter PLL1_LOCK_CFG bound to: 9'b111101000 
+	Parameter PLL1_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter PLL_CLKOUT_CFG bound to: 8'b00000000 
+	Parameter RSVD_ATTR0 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR1 bound to: 16'b0000000000000000 
+	Parameter SIM_PLL0REFCLK_SEL bound to: 3'b001 
+	Parameter SIM_PLL1REFCLK_SEL bound to: 3'b001 
+	Parameter SIM_RESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter SIM_VERSION bound to: 2.0 - type: string 
+INFO: [Synth 8-256] done synthesizing module 'GTPE2_COMMON' (6#1) [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:9987]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_gt_common_wrapper' (7#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_gt_common_wrapper.v:56]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_core' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx_core.v:65]
+	Parameter WATCHDOG_TIMEOUT bound to: 14 - type: integer 
+	Parameter SIM_GTRESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter C_SIMPLEX_TIMER bound to: 18 - type: integer 
+	Parameter C_ALIGNED_TIMER bound to: 158990 - type: integer 
+	Parameter C_VERIFY_TIMER bound to: 159502 - type: integer 
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_RESET_LOGIC' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_reset_logic.v:62]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_RESET_LOGIC' (8#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_reset_logic.v:62]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_RX_AURORA_LANE_SIMPLEX_V5' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_aurora_lane_simplex.v:67]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_RX_LANE_INIT_SM_SIMPLEX' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_lane_init_sm_simplex.v:62]
+INFO: [Synth 8-638] synthesizing module 'FDR' [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:3951]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'FDR' (9#1) [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:3951]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_RX_LANE_INIT_SM_SIMPLEX' (10#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_lane_init_sm_simplex.v:62]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_CHBOND_COUNT_DEC' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_chbond_count_dec.v:62]
+	Parameter CHANNEL_BOND_LOAD_CODE bound to: 6'b100111 
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_CHBOND_COUNT_DEC' (11#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_chbond_count_dec.v:62]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_SYM_DEC' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_sym_dec.v:64]
+	Parameter K_CHAR_0 bound to: 4'b1011 
+	Parameter K_CHAR_1 bound to: 4'b1100 
+	Parameter SP_DATA_0 bound to: 4'b0100 
+	Parameter SP_DATA_1 bound to: 4'b1010 
+	Parameter SPA_DATA_0 bound to: 4'b0010 
+	Parameter SPA_DATA_1 bound to: 4'b1100 
+	Parameter SP_NEG_DATA_0 bound to: 4'b1011 
+	Parameter SP_NEG_DATA_1 bound to: 4'b0101 
+	Parameter SPA_NEG_DATA_0 bound to: 4'b1101 
+	Parameter SPA_NEG_DATA_1 bound to: 4'b0011 
+	Parameter PAD_0 bound to: 4'b1001 
+	Parameter PAD_1 bound to: 4'b1100 
+	Parameter SCP_0 bound to: 4'b0101 
+	Parameter SCP_1 bound to: 4'b1100 
+	Parameter SCP_2 bound to: 4'b1111 
+	Parameter SCP_3 bound to: 4'b1011 
+	Parameter ECP_0 bound to: 4'b1111 
+	Parameter ECP_1 bound to: 4'b1101 
+	Parameter ECP_2 bound to: 4'b1111 
+	Parameter ECP_3 bound to: 4'b1110 
+	Parameter A_CHAR_0 bound to: 4'b0111 
+	Parameter A_CHAR_1 bound to: 4'b1100 
+	Parameter VER_DATA_0 bound to: 4'b1110 
+	Parameter VER_DATA_1 bound to: 4'b1000 
+	Parameter CC_CHAR_0 bound to: 4'b1111 
+	Parameter CC_CHAR_1 bound to: 4'b0111 
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_SYM_DEC' (12#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_sym_dec.v:64]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_RX_ERR_DETECT_SIMPLEX_V5' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_err_detect_simplex.v:65]
+	Parameter ENABLE_SOFT_ERR_MONITOR bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_err_detect_simplex.v:212]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_RX_ERR_DETECT_SIMPLEX_V5' (13#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_err_detect_simplex.v:65]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_hotplug' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_hotplug.v:53]
+	Parameter ENABLE_HOTPLUG bound to: 1 - type: integer 
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+INFO: [Synth 8-3936] Found unconnected internal register 'link_reset_r_reg' and it is trimmed from '2' to '1' bits. [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_hotplug.v:185]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_hotplug' (14#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_hotplug.v:53]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_RX_AURORA_LANE_SIMPLEX_V5' (15#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_aurora_lane_simplex.v:67]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_GT_WRAPPER' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_transceiver_wrapper.v:57]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter SIM_GTRESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter STABLE_CLOCK_PERIOD bound to: 20 - type: integer 
+	Parameter RX_CDRLOCK_TIME bound to: 100000.000000 - type: float 
+INFO: [Synth 8-638] synthesizing module 'BUFH' [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-256] done synthesizing module 'BUFH' (16#1) [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:806]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_rx_startup_fsm' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:75]
+	Parameter EXAMPLE_SIMULATION bound to: 0 - type: integer 
+	Parameter GT_TYPE bound to: GTP - type: string 
+	Parameter STABLE_CLOCK_PERIOD bound to: 20 - type: integer 
+	Parameter RETRY_COUNTER_BITWIDTH bound to: 8 - type: integer 
+	Parameter TX_PLL0_USED bound to: TRUE - type: string 
+	Parameter RX_PLL0_USED bound to: TRUE - type: string 
+	Parameter PHASE_ALIGNMENT_MANUAL bound to: FALSE - type: string 
+	Parameter INIT bound to: 4'b0000 
+	Parameter ASSERT_ALL_RESETS bound to: 4'b0001 
+	Parameter WAIT_FOR_PLL_LOCK bound to: 4'b0010 
+	Parameter RELEASE_PLL_RESET bound to: 4'b0011 
+	Parameter VERIFY_RECCLK_STABLE bound to: 4'b0100 
+	Parameter RELEASE_MMCM_RESET bound to: 4'b0101 
+	Parameter WAIT_FOR_RXUSRCLK bound to: 4'b0110 
+	Parameter WAIT_RESET_DONE bound to: 4'b0111 
+	Parameter DO_PHASE_ALIGNMENT bound to: 4'b1000 
+	Parameter MONITOR_DATA_VALID bound to: 4'b1001 
+	Parameter FSM_DONE bound to: 4'b1010 
+	Parameter MMCM_LOCK_CNT_MAX bound to: 1024 - type: integer 
+	Parameter STARTUP_DELAY bound to: 500 - type: integer 
+	Parameter WAIT_CYCLES bound to: 25 - type: integer 
+	Parameter WAIT_MAX bound to: 35 - type: integer 
+	Parameter WAIT_TIMEOUT_2ms bound to: 325000 - type: integer 
+	Parameter WAIT_TLOCK_MAX bound to: 5000 - type: integer 
+	Parameter WAIT_TIMEOUT_500us bound to: 25000 - type: integer 
+	Parameter WAIT_TIMEOUT_1us bound to: 50 - type: integer 
+	Parameter WAIT_TIMEOUT_100us bound to: 5000 - type: integer 
+	Parameter WAIT_TIME_MAX bound to: 500 - type: integer 
+	Parameter PORT_WIDTH bound to: 19 - type: integer 
+	Parameter MAX_RETRIES bound to: 255 - type: integer 
+	Parameter MAX_WAIT_BYPASS bound to: 5000 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element time_out_500us_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:422]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_rx_startup_fsm' (17#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:75]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_multi_gt' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_multi_gt.v:56]
+	Parameter WRAPPER_SIM_GTRESET_SPEEDUP bound to: FALSE - type: string 
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_gt' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_gt.v:55]
+	Parameter GT_SIM_GTRESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter TXSYNC_OVRD_IN bound to: 1'b0 
+	Parameter TXSYNC_MULTILANE_IN bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'GTPE2_CHANNEL' [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:9285]
+	Parameter ACJTAG_DEBUG_MODE bound to: 1'b0 
+	Parameter ACJTAG_MODE bound to: 1'b0 
+	Parameter ACJTAG_RESET bound to: 1'b0 
+	Parameter ADAPT_CFG0 bound to: 20'b00000000000000000000 
+	Parameter ALIGN_COMMA_DOUBLE bound to: FALSE - type: string 
+	Parameter ALIGN_COMMA_ENABLE bound to: 10'b1111111111 
+	Parameter ALIGN_COMMA_WORD bound to: 2 - type: integer 
+	Parameter ALIGN_MCOMMA_DET bound to: TRUE - type: string 
+	Parameter ALIGN_MCOMMA_VALUE bound to: 10'b1010000011 
+	Parameter ALIGN_PCOMMA_DET bound to: TRUE - type: string 
+	Parameter ALIGN_PCOMMA_VALUE bound to: 10'b0101111100 
+	Parameter CBCC_DATA_SOURCE_SEL bound to: DECODED - type: string 
+	Parameter CFOK_CFG bound to: 43'b1001001000000000000000001000000111010000000 
+	Parameter CFOK_CFG2 bound to: 7'b0100000 
+	Parameter CFOK_CFG3 bound to: 7'b0100000 
+	Parameter CFOK_CFG4 bound to: 1'b0 
+	Parameter CFOK_CFG5 bound to: 2'b00 
+	Parameter CFOK_CFG6 bound to: 4'b0000 
+	Parameter CHAN_BOND_KEEP_ALIGN bound to: FALSE - type: string 
+	Parameter CHAN_BOND_MAX_SKEW bound to: 7 - type: integer 
+	Parameter CHAN_BOND_SEQ_1_1 bound to: 10'b0101111100 
+	Parameter CHAN_BOND_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_ENABLE bound to: 4'b0001 
+	Parameter CHAN_BOND_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_ENABLE bound to: 4'b0000 
+	Parameter CHAN_BOND_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CHAN_BOND_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CLK_COMMON_SWING bound to: 1'b0 
+	Parameter CLK_CORRECT_USE bound to: TRUE - type: string 
+	Parameter CLK_COR_KEEP_IDLE bound to: FALSE - type: string 
+	Parameter CLK_COR_MAX_LAT bound to: 17 - type: integer 
+	Parameter CLK_COR_MIN_LAT bound to: 12 - type: integer 
+	Parameter CLK_COR_PRECEDENCE bound to: TRUE - type: string 
+	Parameter CLK_COR_REPEAT_WAIT bound to: 0 - type: integer 
+	Parameter CLK_COR_SEQ_1_1 bound to: 10'b0111110111 
+	Parameter CLK_COR_SEQ_1_2 bound to: 10'b0111110111 
+	Parameter CLK_COR_SEQ_1_3 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_1_4 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_1 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_2_2 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_2_3 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_2_4 bound to: 10'b0100000000 
+	Parameter CLK_COR_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_SEQ_LEN bound to: 2 - type: integer 
+	Parameter DEC_MCOMMA_DETECT bound to: TRUE - type: string 
+	Parameter DEC_PCOMMA_DETECT bound to: TRUE - type: string 
+	Parameter DEC_VALID_COMMA_ONLY bound to: FALSE - type: string 
+	Parameter DMONITOR_CFG bound to: 24'b000000000000101000000000 
+	Parameter ES_CLK_PHASE_SEL bound to: 1'b0 
+	Parameter ES_CONTROL bound to: 6'b000000 
+	Parameter ES_ERRDET_EN bound to: FALSE - type: string 
+	Parameter ES_EYE_SCAN_EN bound to: FALSE - type: string 
+	Parameter ES_HORZ_OFFSET bound to: 12'b000000010000 
+	Parameter ES_PMA_CFG bound to: 10'b0000000000 
+	Parameter ES_PRESCALE bound to: 5'b00000 
+	Parameter ES_QUALIFIER bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_QUAL_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_SDATA_MASK bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter ES_VERT_OFFSET bound to: 9'b000000000 
+	Parameter FTS_DESKEW_SEQ_ENABLE bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_CFG bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_EN bound to: FALSE - type: string 
+	Parameter GEARBOX_MODE bound to: 3'b000 
+	Parameter IS_CLKRSVD0_INVERTED bound to: 1'b0 
+	Parameter IS_CLKRSVD1_INVERTED bound to: 1'b0 
+	Parameter IS_DMONITORCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DRPCLK_INVERTED bound to: 1'b0 
+	Parameter IS_RXUSRCLK2_INVERTED bound to: 1'b0 
+	Parameter IS_RXUSRCLK_INVERTED bound to: 1'b0 
+	Parameter IS_SIGVALIDCLK_INVERTED bound to: 1'b0 
+	Parameter IS_TXPHDLYTSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_TXUSRCLK2_INVERTED bound to: 1'b0 
+	Parameter IS_TXUSRCLK_INVERTED bound to: 1'b0 
+	Parameter LOOPBACK_CFG bound to: 1'b0 
+	Parameter OUTREFCLK_SEL_INV bound to: 2'b11 
+	Parameter PCS_PCIE_EN bound to: FALSE - type: string 
+	Parameter PCS_RSVD_ATTR bound to: 48'b000000000000000000000000000000000000000000000000 
+	Parameter PD_TRANS_TIME_FROM_P2 bound to: 12'b000000111100 
+	Parameter PD_TRANS_TIME_NONE_P2 bound to: 8'b00111100 
+	Parameter PD_TRANS_TIME_TO_P2 bound to: 8'b01100100 
+	Parameter PMA_LOOPBACK_CFG bound to: 1'b0 
+	Parameter PMA_RSV bound to: 819 - type: integer 
+	Parameter PMA_RSV2 bound to: 8256 - type: integer 
+	Parameter PMA_RSV3 bound to: 2'b00 
+	Parameter PMA_RSV4 bound to: 4'b0000 
+	Parameter PMA_RSV5 bound to: 1'b0 
+	Parameter PMA_RSV6 bound to: 1'b0 
+	Parameter PMA_RSV7 bound to: 1'b0 
+	Parameter RXBUFRESET_TIME bound to: 5'b00001 
+	Parameter RXBUF_ADDR_MODE bound to: FULL - type: string 
+	Parameter RXBUF_EIDLE_HI_CNT bound to: 4'b1000 
+	Parameter RXBUF_EIDLE_LO_CNT bound to: 4'b0000 
+	Parameter RXBUF_EN bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_CB_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_COMMAALIGN bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_EIDLE bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_THRESH_OVFLW bound to: 61 - type: integer 
+	Parameter RXBUF_THRESH_OVRD bound to: FALSE - type: string 
+	Parameter RXBUF_THRESH_UNDFLW bound to: 4 - type: integer 
+	Parameter RXCDRFREQRESET_TIME bound to: 5'b00001 
+	Parameter RXCDRPHRESET_TIME bound to: 5'b00001 
+	Parameter RXCDR_CFG bound to: 83'b00000000000000000010000011111111110000010000110000000000001000001000001000000010000 
+	Parameter RXCDR_FR_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXCDR_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RXCDR_LOCK_CFG bound to: 6'b001001 
+	Parameter RXCDR_PH_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter RXDLY_LCFG bound to: 9'b000110000 
+	Parameter RXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter RXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter RXISCANRESET_TIME bound to: 5'b00001 
+	Parameter RXLPMRESET_TIME bound to: 7'b0001111 
+	Parameter RXLPM_BIAS_STARTUP_DISABLE bound to: 1'b0 
+	Parameter RXLPM_CFG bound to: 4'b0110 
+	Parameter RXLPM_CFG1 bound to: 1'b0 
+	Parameter RXLPM_CM_CFG bound to: 1'b0 
+	Parameter RXLPM_GC_CFG bound to: 9'b111100010 
+	Parameter RXLPM_GC_CFG2 bound to: 3'b001 
+	Parameter RXLPM_HF_CFG bound to: 14'b00001111110000 
+	Parameter RXLPM_HF_CFG2 bound to: 5'b01010 
+	Parameter RXLPM_HF_CFG3 bound to: 4'b0000 
+	Parameter RXLPM_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RXLPM_INCM_CFG bound to: 1'b1 
+	Parameter RXLPM_IPCM_CFG bound to: 1'b0 
+	Parameter RXLPM_LF_CFG bound to: 18'b000000001111110000 
+	Parameter RXLPM_LF_CFG2 bound to: 5'b01010 
+	Parameter RXLPM_OSINT_CFG bound to: 3'b100 
+	Parameter RXOOB_CFG bound to: 7'b0000110 
+	Parameter RXOOB_CLK_CFG bound to: PMA - type: string 
+	Parameter RXOSCALRESET_TIME bound to: 5'b00011 
+	Parameter RXOSCALRESET_TIMEOUT bound to: 5'b00000 
+	Parameter RXOUT_DIV bound to: 8 - type: integer 
+	Parameter RXPCSRESET_TIME bound to: 5'b00001 
+	Parameter RXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter RXPH_CFG bound to: 24'b110000000000000000000010 
+	Parameter RXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter RXPI_CFG0 bound to: 3'b000 
+	Parameter RXPI_CFG1 bound to: 1'b1 
+	Parameter RXPI_CFG2 bound to: 1'b1 
+	Parameter RXPMARESET_TIME bound to: 5'b00011 
+	Parameter RXPRBS_ERR_LOOPBACK bound to: 1'b0 
+	Parameter RXSLIDE_AUTO_WAIT bound to: 7 - type: integer 
+	Parameter RXSLIDE_MODE bound to: OFF - type: string 
+	Parameter RXSYNC_MULTILANE bound to: 1'b0 
+	Parameter RXSYNC_OVRD bound to: 1'b0 
+	Parameter RXSYNC_SKIP_DA bound to: 1'b0 
+	Parameter RX_BIAS_CFG bound to: 16'b0000111100110011 
+	Parameter RX_BUFFER_CFG bound to: 6'b000000 
+	Parameter RX_CLK25_DIV bound to: 5 - type: integer 
+	Parameter RX_CLKMUX_EN bound to: 1'b1 
+	Parameter RX_CM_SEL bound to: 2'b11 
+	Parameter RX_CM_TRIM bound to: 4'b1010 
+	Parameter RX_DATA_WIDTH bound to: 20 - type: integer 
+	Parameter RX_DDI_SEL bound to: 6'b000000 
+	Parameter RX_DEBUG_CFG bound to: 14'b00000000000000 
+	Parameter RX_DEFER_RESET_BUF_EN bound to: TRUE - type: string 
+	Parameter RX_DISPERR_SEQ_MATCH bound to: TRUE - type: string 
+	Parameter RX_OS_CFG bound to: 13'b0000010000000 
+	Parameter RX_SIG_VALID_DLY bound to: 10 - type: integer 
+	Parameter RX_XCLK_SEL bound to: RXREC - type: string 
+	Parameter SAS_MAX_COM bound to: 64 - type: integer 
+	Parameter SAS_MIN_COM bound to: 36 - type: integer 
+	Parameter SATA_BURST_SEQ_LEN bound to: 4'b0101 
+	Parameter SATA_BURST_VAL bound to: 3'b100 
+	Parameter SATA_EIDLE_VAL bound to: 3'b100 
+	Parameter SATA_MAX_BURST bound to: 8 - type: integer 
+	Parameter SATA_MAX_INIT bound to: 21 - type: integer 
+	Parameter SATA_MAX_WAKE bound to: 7 - type: integer 
+	Parameter SATA_MIN_BURST bound to: 4 - type: integer 
+	Parameter SATA_MIN_INIT bound to: 12 - type: integer 
+	Parameter SATA_MIN_WAKE bound to: 4 - type: integer 
+	Parameter SATA_PLL_CFG bound to: VCO_3000MHZ - type: string 
+	Parameter SHOW_REALIGN_COMMA bound to: TRUE - type: string 
+	Parameter SIM_RECEIVER_DETECT_PASS bound to: TRUE - type: string 
+	Parameter SIM_RESET_SPEEDUP bound to: FALSE - type: string 
+	Parameter SIM_TX_EIDLE_DRIVE_LEVEL bound to: X - type: string 
+	Parameter SIM_VERSION bound to: 2.0 - type: string 
+	Parameter TERM_RCAL_CFG bound to: 15'b100001000010000 
+	Parameter TERM_RCAL_OVRD bound to: 3'b000 
+	Parameter TRANS_TIME_RATE bound to: 8'b00001110 
+	Parameter TST_RSV bound to: 0 - type: integer 
+	Parameter TXBUF_EN bound to: TRUE - type: string 
+	Parameter TXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter TXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter TXDLY_LCFG bound to: 9'b000110000 
+	Parameter TXDLY_TAP_CFG bound to: 16'b0000000000000000 
+	Parameter TXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter TXOOB_CFG bound to: 1'b0 
+	Parameter TXOUT_DIV bound to: 8 - type: integer 
+	Parameter TXPCSRESET_TIME bound to: 5'b00001 
+	Parameter TXPHDLY_CFG bound to: 24'b000010000100000000100000 
+	Parameter TXPH_CFG bound to: 16'b0000011110000000 
+	Parameter TXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter TXPI_CFG0 bound to: 2'b00 
+	Parameter TXPI_CFG1 bound to: 2'b00 
+	Parameter TXPI_CFG2 bound to: 2'b00 
+	Parameter TXPI_CFG3 bound to: 1'b0 
+	Parameter TXPI_CFG4 bound to: 1'b0 
+	Parameter TXPI_CFG5 bound to: 3'b000 
+	Parameter TXPI_GREY_SEL bound to: 1'b0 
+	Parameter TXPI_INVSTROBE_SEL bound to: 1'b0 
+	Parameter TXPI_PPMCLK_SEL bound to: TXUSRCLK2 - type: string 
+	Parameter TXPI_PPM_CFG bound to: 8'b00000000 
+	Parameter TXPI_SYNFREQ_PPM bound to: 3'b000 
+	Parameter TXPMARESET_TIME bound to: 5'b00001 
+	Parameter TXSYNC_MULTILANE bound to: 1'b0 
+	Parameter TXSYNC_OVRD bound to: 1'b0 
+	Parameter TXSYNC_SKIP_DA bound to: 1'b0 
+	Parameter TX_CLK25_DIV bound to: 5 - type: integer 
+	Parameter TX_CLKMUX_EN bound to: 1'b1 
+	Parameter TX_DATA_WIDTH bound to: 20 - type: integer 
+	Parameter TX_DEEMPH0 bound to: 6'b000000 
+	Parameter TX_DEEMPH1 bound to: 6'b000000 
+	Parameter TX_DRIVE_MODE bound to: DIRECT - type: string 
+	Parameter TX_EIDLE_ASSERT_DELAY bound to: 3'b110 
+	Parameter TX_EIDLE_DEASSERT_DELAY bound to: 3'b100 
+	Parameter TX_LOOPBACK_DRIVE_HIZ bound to: FALSE - type: string 
+	Parameter TX_MAINCURSOR_SEL bound to: 1'b0 
+	Parameter TX_MARGIN_FULL_0 bound to: 7'b1001110 
+	Parameter TX_MARGIN_FULL_1 bound to: 7'b1001001 
+	Parameter TX_MARGIN_FULL_2 bound to: 7'b1000101 
+	Parameter TX_MARGIN_FULL_3 bound to: 7'b1000010 
+	Parameter TX_MARGIN_FULL_4 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_0 bound to: 7'b1000110 
+	Parameter TX_MARGIN_LOW_1 bound to: 7'b1000100 
+	Parameter TX_MARGIN_LOW_2 bound to: 7'b1000010 
+	Parameter TX_MARGIN_LOW_3 bound to: 7'b1000000 
+	Parameter TX_MARGIN_LOW_4 bound to: 7'b1000000 
+	Parameter TX_PREDRIVER_MODE bound to: 1'b0 
+	Parameter TX_RXDETECT_CFG bound to: 14'b01100000110010 
+	Parameter TX_RXDETECT_REF bound to: 3'b100 
+	Parameter TX_XCLK_SEL bound to: TXOUT - type: string 
+	Parameter UCODEER_CLR bound to: 1'b0 
+	Parameter USE_PCS_CLK_PHASE_SEL bound to: 1'b0 
+INFO: [Synth 8-256] done synthesizing module 'GTPE2_CHANNEL' (18#1) [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:9285]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_gtrxreset_seq' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_gtrxreset_seq.v:54]
+	Parameter idle bound to: 3'b000 
+	Parameter drp_rd bound to: 3'b001 
+	Parameter wait_rd_data bound to: 3'b010 
+	Parameter wr_16 bound to: 3'b011 
+	Parameter wait_wr_done1 bound to: 3'b100 
+	Parameter wait_pmareset bound to: 3'b101 
+	Parameter wr_20 bound to: 3'b110 
+	Parameter wait_wr_done2 bound to: 3'b111 
+INFO: [Synth 8-226] default block is never used [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_gtrxreset_seq.v:237]
+INFO: [Synth 8-226] default block is never used [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_gtrxreset_seq.v:298]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_gtrxreset_seq' (19#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_gtrxreset_seq.v:54]
+INFO: [Synth 8-4471] merging register 'drp_busy_i2_reg' into 'drp_busy_i1_reg' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_gt.v:904]
+WARNING: [Synth 8-6014] Unused sequential element drp_busy_i2_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_gt.v:904]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_gt' (20#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_gt.v:55]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_multi_gt' (21#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_multi_gt.v:56]
+WARNING: [Synth 8-6014] Unused sequential element gt0_txresetdone_r_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_transceiver_wrapper.v:312]
+WARNING: [Synth 8-6014] Unused sequential element gt0_txresetdone_r2_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_transceiver_wrapper.v:313]
+WARNING: [Synth 8-6014] Unused sequential element gt0_txresetdone_r3_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_transceiver_wrapper.v:314]
+WARNING: [Synth 8-6014] Unused sequential element txfsm_txresetdone_r_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_transceiver_wrapper.v:334]
+INFO: [Synth 8-4471] merging register 'rxfsm_rxresetdone_r1_reg' into 'rxfsm_rxresetdone_r_reg' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_transceiver_wrapper.v:346]
+WARNING: [Synth 8-6014] Unused sequential element rxfsm_rxresetdone_r1_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_transceiver_wrapper.v:346]
+WARNING: [Synth 8-3848] Net TX_RESETDONE_OUT in module/entity aurora_8b10b_rx_GT_WRAPPER does not have driver. [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_transceiver_wrapper.v:181]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_GT_WRAPPER' (22#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_transceiver_wrapper.v:57]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_RX_GLOBAL_LOGIC_SIMPLEX' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_global_logic_simplex.v:62]
+	Parameter WATCHDOG_TIMEOUT bound to: 14 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_RX_CHANNEL_INIT_SM_SIMPLEX' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_channel_init_sm_simplex.v:80]
+	Parameter WATCHDOG_TIMEOUT bound to: 14 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'FD' [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:3723]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'FD' (23#1) [F:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:3723]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_RX_CHANNEL_INIT_SM_SIMPLEX' (24#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_channel_init_sm_simplex.v:80]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_RX_CHANNEL_ERR_DETECT_SIMPLEX' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_channel_err_detect_simplex.v:65]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_RX_CHANNEL_ERR_DETECT_SIMPLEX' (25#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_channel_err_detect_simplex.v:65]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_RX_GLOBAL_LOGIC_SIMPLEX' (26#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_global_logic_simplex.v:62]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_LL_TO_AXI' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_ll_to_axi.v:62]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter STRB_WIDTH bound to: 2 - type: integer 
+	Parameter USE_UFC_REM bound to: 0 - type: integer 
+	Parameter BC bound to: 2 - type: integer 
+	Parameter REM_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_LL_TO_AXI' (27#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_ll_to_axi.v:62]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_RX_LL' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_ll.v:64]
+INFO: [Synth 8-638] synthesizing module 'aurora_8b10b_rx_RX_LL_PDU_DATAPATH' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_ll_pdu_datapath.v:63]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_RX_LL_PDU_DATAPATH' (28#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_ll_pdu_datapath.v:63]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_RX_LL' (29#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_ll.v:64]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_core' (30#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx_core.v:65]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx_support' (31#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_support.v:53]
+INFO: [Synth 8-256] done synthesizing module 'aurora_8b10b_rx' (32#1) [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx.v:54]
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_LL_TO_AXI has unconnected port LL_IP_SOF_N
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_RX_CHANNEL_INIT_SM_SIMPLEX has unconnected port CH_BOND_DONE
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_RX_CHANNEL_INIT_SM_SIMPLEX has unconnected port CHANNEL_BOND_LOAD
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_RX_CHANNEL_INIT_SM_SIMPLEX has unconnected port GOT_A[0]
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_RX_CHANNEL_INIT_SM_SIMPLEX has unconnected port GOT_A[1]
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_cdc_sync__parameterized0 has unconnected port prmry_rst_n
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_cdc_sync__parameterized0 has unconnected port prmry_vect_in[1]
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_cdc_sync__parameterized0 has unconnected port prmry_vect_in[0]
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_cdc_sync__parameterized0 has unconnected port scndry_rst_n
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_cdc_sync has unconnected port prmry_aclk
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_cdc_sync has unconnected port prmry_rst_n
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_cdc_sync has unconnected port prmry_vect_in[1]
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_cdc_sync has unconnected port prmry_vect_in[0]
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_cdc_sync has unconnected port scndry_rst_n
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_rx_startup_fsm has unconnected port PLL0REFCLKLOST
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_rx_startup_fsm has unconnected port PLL1REFCLKLOST
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_GT_WRAPPER has unconnected port TX_RESETDONE_OUT
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_GT_WRAPPER has unconnected port ENCHANSYNC_IN
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_GT_WRAPPER has unconnected port RXRESET_IN
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_GT_WRAPPER has unconnected port REFCLK
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_GT_WRAPPER has unconnected port PLL_NOT_LOCKED
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_GT_WRAPPER has unconnected port TXRESET_IN
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_GT_WRAPPER has unconnected port RXFSM_DATA_VALID
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_hotplug has unconnected port RX_SP
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_hotplug has unconnected port RX_SPA
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_hotplug has unconnected port HPCNT_RESET
+WARNING: [Synth 8-3331] design aurora_8b10b_rx_RESET_LOGIC has unconnected port PLL_NOT_LOCKED
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 488.301 ; gain = 158.500
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin ll_to_axi_pdu_i:AXI4_S_IP_TREADY to constant 0 [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx_core.v:574]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 488.301 ; gain = 158.500
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx_ooc.xdc] for cell 'inst'
+Parsing XDC File [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.runs/aurora_8b10b_rx_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.runs/aurora_8b10b_rx_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx_clocks.xdc] for cell 'inst'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  FD => FDRE: 2 instances
+  FDR => FDRE: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 878.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 878.043 ; gain = 548.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 878.043 ; gain = 548.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.runs/aurora_8b10b_rx_synth_1/dont_touch.xdc}, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 878.043 ; gain = 548.242
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element counter1_r_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_lane_init_sm_simplex.v:246]
+INFO: [Synth 8-5544] ROM "left_aligned_r" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "good_count_r" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element count_for_reset_r_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_hotplug.v:142]
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'aurora_8b10b_rx_rx_startup_fsm'
+INFO: [Synth 8-5546] ROM "init_wait_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "init_wait_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_2ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_1us" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_100us" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wait_bypass_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "time_out_wait_bypass" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "retry_counter_int" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gtrxreset_i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mmcm_reset_i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "PLL0_RESET" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "run_phase_alignment_int" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element init_wait_count_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:254]
+WARNING: [Synth 8-6014] Unused sequential element time_out_counter_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:419]
+WARNING: [Synth 8-6014] Unused sequential element mmcm_lock_count_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:465]
+WARNING: [Synth 8-6014] Unused sequential element wait_bypass_count_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:648]
+WARNING: [Synth 8-6014] Unused sequential element wait_time_cnt_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:669]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'aurora_8b10b_rx_gtrxreset_seq'
+INFO: [Synth 8-5544] ROM "drpwe_o" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "drpen_o" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flag" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "rx_cdrlocked" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "rx_cdrlock_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element free_count_r_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_channel_init_sm_simplex.v:283]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                             0000 |                             0000
+       ASSERT_ALL_RESETS |                             0001 |                             0001
+       WAIT_FOR_PLL_LOCK |                             0010 |                             0010
+       RELEASE_PLL_RESET |                             0011 |                             0011
+    VERIFY_RECCLK_STABLE |                             0100 |                             0100
+      RELEASE_MMCM_RESET |                             0101 |                             0101
+       WAIT_FOR_RXUSRCLK |                             0110 |                             0110
+         WAIT_RESET_DONE |                             0111 |                             0111
+      DO_PHASE_ALIGNMENT |                             1000 |                             1000
+      MONITOR_DATA_VALID |                             1001 |                             1001
+                FSM_DONE |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'sequential' in module 'aurora_8b10b_rx_rx_startup_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                  drp_rd |                              001 |                              001
+            wait_rd_data |                              010 |                              010
+                   wr_16 |                              011 |                              011
+           wait_wr_done1 |                              100 |                              100
+           wait_pmareset |                              101 |                              101
+                   wr_20 |                              110 |                              110
+           wait_wr_done2 |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'aurora_8b10b_rx_gtrxreset_seq'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 878.043 ; gain = 548.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               96 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 8     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                4 Bit    Registers := 12    
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 271   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  18 Input      4 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 27    
+	   3 Input      1 Bit        Muxes := 1     
+	  32 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 20    
+	   8 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module aurora_8b10b_rx_cdc_sync 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module aurora_8b10b_rx_cdc_sync__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
+Module aurora_8b10b_rx_SUPPORT_RESET_LOGIC 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
+Module aurora_8b10b_rx_gt_common_wrapper 
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+	               96 Bit    Registers := 1     
+Module aurora_8b10b_rx_RESET_LOGIC 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
+Module aurora_8b10b_rx_RX_LANE_INIT_SM_SIMPLEX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
+Module aurora_8b10b_rx_CHBOND_COUNT_DEC 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module aurora_8b10b_rx_SYM_DEC 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 10    
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module aurora_8b10b_rx_RX_ERR_DETECT_SIMPLEX_V5 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	  32 Input      1 Bit        Muxes := 1     
+Module aurora_8b10b_rx_hotplug 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module aurora_8b10b_rx_rx_startup_fsm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 26    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  18 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	  11 Input      1 Bit        Muxes := 20    
+Module aurora_8b10b_rx_gtrxreset_seq 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 4     
+Module aurora_8b10b_rx_gt 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module aurora_8b10b_rx_GT_WRAPPER 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module aurora_8b10b_rx_RX_CHANNEL_INIT_SM_SIMPLEX 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
+Module aurora_8b10b_rx_RX_CHANNEL_ERR_DETECT_SIMPLEX 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 7     
+Module aurora_8b10b_rx_LL_TO_AXI 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+Module aurora_8b10b_rx_RX_LL_PDU_DATAPATH 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module aurora_8b10b_rx_core 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'aurora_8b10b_rx_core_i/gt_wrapper_i/link_reset_r_reg' into 'aurora_8b10b_rx_core_i/core_reset_logic_i/link_reset_comb_r_reg' [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_transceiver_wrapper.v:383]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/chbond_count_dec_i/CHANNEL_BOND_LOAD_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_chbond_count_dec.v:92]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/RX_SPA_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_sym_dec.v:410]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/GOT_A_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_sym_dec.v:445]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/mmcm_reset_i_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:245]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/PLL1_RESET_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:707]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/RESET_PHALIGNMENT_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:713]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/retry_counter_int_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:241]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/gt_wrapper_i/aurora_8b10b_rx_multi_gt_i/gt0_aurora_8b10b_rx_i/drp_busy_i1_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_gt.v:897]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/gt_wrapper_i/link_reset_r_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_transceiver_wrapper.v:383]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/rx_global_logic_simplex_i/rx_channel_err_detect_simplex_i/RX_ALIGNED_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_channel_err_detect_simplex.v:179]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/rx_ll_i/rx_ll_pdu_datapath_i/sof_in_storage_r_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_ll_pdu_datapath.v:199]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/rx_ll_i/rx_ll_pdu_datapath_i/RX_SOF_N_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_ll_pdu_datapath.v:205]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/rxfsm_data_valid_r_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx_core.v:298]
+INFO: [Synth 8-5546] ROM "aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/init_wait_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/init_wait_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/time_out_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/time_out_2ms" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/time_out_100us" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/time_out_1us" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/wait_bypass_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/time_out_wait_bypass" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "aurora_8b10b_rx_core_i/gt_wrapper_i/rx_cdrlock_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "aurora_8b10b_rx_core_i/gt_wrapper_i/rx_cdrlocked" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/rx_lane_init_sm_simplex_i/counter1_r_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_lane_init_sm_simplex.v:246]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/aurora_8b10b_rx_hotplug_i/count_for_reset_r_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_hotplug.v:142]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/init_wait_count_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:254]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/wait_time_cnt_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:669]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/time_out_counter_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:419]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/mmcm_lock_count_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:465]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/wait_bypass_count_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/gt/aurora_8b10b_rx_rx_startup_fsm.v:648]
+WARNING: [Synth 8-6014] Unused sequential element aurora_8b10b_rx_core_i/rx_global_logic_simplex_i/rx_channel_init_sm_simplex_i/free_count_r_reg was removed.  [c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/aurora_8b10b_rx/aurora_8b10b_rx/src/aurora_8b10b_rx_rx_channel_init_sm_simplex.v:283]
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_cc_r_reg[0]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_ecp_d_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_cc_r_reg[2]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_ecp_d_r_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/recclk_mon_restart_count_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/recclk_mon_restart_count_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/got_a_d_r_reg[1]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_sp_d_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_spa_d_r_reg[1]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_sp_d_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_spa_d_r_reg[1]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_sp_d_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_sp_d_r_reg[1]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_scp_d_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_spa_d_r_reg[0]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_sp_d_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_sp_d_r_reg[0]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_v_d_r_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_sp_d_r_reg[2]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_sp_d_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_sp_d_r_reg[3]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_sp_d_r_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_v_d_r_reg[1]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_scp_d_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_v_d_r_reg[2]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_v_d_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_v_d_r_reg[3]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_v_d_r_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_spa_d_r_reg[3]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_pad_d_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_spa_d_r_reg[3]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_pad_d_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/got_a_d_r_reg[3]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_pad_d_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_scp_d_r_reg[2]' (FD) to 'inst/aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_ecp_d_r_reg[2]'
+WARNING: [Synth 8-3332] Sequential element (aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_spa_d_r_reg[0]) is unused and will be removed from module aurora_8b10b_rx_support.
+WARNING: [Synth 8-3332] Sequential element (aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/rx_spa_d_r_reg[2]) is unused and will be removed from module aurora_8b10b_rx_support.
+WARNING: [Synth 8-3332] Sequential element (aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_spa_d_r_reg[2]) is unused and will be removed from module aurora_8b10b_rx_support.
+WARNING: [Synth 8-3332] Sequential element (aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/prev_beat_spa_r_reg) is unused and will be removed from module aurora_8b10b_rx_support.
+WARNING: [Synth 8-3332] Sequential element (aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/got_a_d_r_reg[0]) is unused and will be removed from module aurora_8b10b_rx_support.
+WARNING: [Synth 8-3332] Sequential element (aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/sym_dec_i/got_a_d_r_reg[2]) is unused and will be removed from module aurora_8b10b_rx_support.
+WARNING: [Synth 8-3332] Sequential element (aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/recclk_mon_count_reset_reg) is unused and will be removed from module aurora_8b10b_rx_support.
+WARNING: [Synth 8-3332] Sequential element (aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/recclk_mon_restart_count_reg[1]) is unused and will be removed from module aurora_8b10b_rx_support.
+WARNING: [Synth 8-3332] Sequential element (aurora_8b10b_rx_core_i/gt_wrapper_i/gt_rxresetfsm_i/recclk_mon_restart_count_reg[0]) is unused and will be removed from module aurora_8b10b_rx_support.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 878.043 ; gain = 548.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------------------------------+------------------------------------------------------------------------------------------+---------------+----------------+
+|Module Name                              | RTL Object                                                                               | Depth x Width | Implemented As | 
++-----------------------------------------+------------------------------------------------------------------------------------------+---------------+----------------+
+|aurora_8b10b_rx_RX_ERR_DETECT_SIMPLEX_V5 | count_r                                                                                  | 32x2          | LUT            | 
+|aurora_8b10b_rx_support                  | aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/rx_err_detect_simplex_gtp_i/count_r | 32x2          | LUT            | 
++-----------------------------------------+------------------------------------------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 878.043 ; gain = 548.242
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 878.043 ; gain = 548.242
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 889.977 ; gain = 560.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop aurora_8b10b_rx_core_i/rx_ll_i/rx_ll_pdu_datapath_i/RX_SRC_RDY_N_reg is being inverted and renamed to aurora_8b10b_rx_core_i/rx_ll_i/rx_ll_pdu_datapath_i/RX_SRC_RDY_N_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 889.977 ; gain = 560.176
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 889.977 ; gain = 560.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 889.977 ; gain = 560.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 889.977 ; gain = 560.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 889.977 ; gain = 560.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 889.977 ; gain = 560.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------------------+---------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name             | RTL Name                                                                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------------+---------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|aurora_8b10b_rx_support | gt_common_support/cpllpd_quad0_wait_reg[95]                                                             | 96     | 1     | NO           | NO                 | YES               | 0      | 3       | 
+|aurora_8b10b_rx_support | gt_common_support/cpllreset_quad0_wait_reg[127]                                                         | 128    | 1     | NO           | NO                 | YES               | 0      | 4       | 
+|aurora_8b10b_rx_support | aurora_8b10b_rx_core_i/gt_wrapper_i/rxfsm_rxresetdone_r_reg                                             | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|aurora_8b10b_rx_support | aurora_8b10b_rx_core_i/rx_aurora_lane_simplex_v5_0_i/rx_lane_init_sm_simplex_i/counter2_r_reg[15]       | 16     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|aurora_8b10b_rx_support | aurora_8b10b_rx_core_i/rx_global_logic_simplex_i/rx_channel_init_sm_simplex_i/v_count_r_reg[31]         | 32     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|aurora_8b10b_rx_support | aurora_8b10b_rx_core_i/rx_global_logic_simplex_i/rx_channel_init_sm_simplex_i/rxver_count_r_reg[2]      | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|aurora_8b10b_rx_support | aurora_8b10b_rx_core_i/rx_global_logic_simplex_i/rx_channel_init_sm_simplex_i/verify_watchdog_r_reg[15] | 16     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|aurora_8b10b_rx_support | aurora_8b10b_rx_core_i/rx_global_logic_simplex_i/rx_channel_err_detect_simplex_i/CHANNEL_SOFT_ERR_reg   | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------------------+---------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |     1|
+|2     |BUFH          |     1|
+|3     |CARRY4        |    31|
+|4     |GTPE2_CHANNEL |     1|
+|5     |GTPE2_COMMON  |     1|
+|6     |IBUFDS_GTE2   |     1|
+|7     |LUT1          |   507|
+|8     |LUT2          |    37|
+|9     |LUT3          |    61|
+|10    |LUT4          |    64|
+|11    |LUT5          |    76|
+|12    |LUT6          |    66|
+|13    |MUXF7         |     3|
+|14    |SRL16E        |     5|
+|15    |SRLC32E       |     8|
+|16    |FD            |     2|
+|17    |FDCE          |    13|
+|18    |FDPE          |     4|
+|19    |FDR           |     1|
+|20    |FDRE          |   536|
+|21    |FDSE          |    24|
++------+--------------+------+
+
+Report Instance Areas: 
++------+--------------------------------------------------------+----------------------------------------------+------+
+|      |Instance                                                |Module                                        |Cells |
++------+--------------------------------------------------------+----------------------------------------------+------+
+|1     |top                                                     |                                              |  1443|
+|2     |  inst                                                  |aurora_8b10b_rx_support                       |  1443|
+|3     |    aurora_8b10b_rx_core_i                              |aurora_8b10b_rx_core                          |  1338|
+|4     |      core_reset_logic_i                                |aurora_8b10b_rx_RESET_LOGIC                   |    62|
+|5     |        link_reset_cdc_sync                             |aurora_8b10b_rx_cdc_sync__parameterized0_19   |    27|
+|6     |        tx_lock_cdc_sync                                |aurora_8b10b_rx_cdc_sync__parameterized0_20   |    27|
+|7     |      gt_wrapper_i                                      |aurora_8b10b_rx_GT_WRAPPER                    |   859|
+|8     |        aurora_8b10b_rx_multi_gt_i                      |aurora_8b10b_rx_multi_gt                      |   196|
+|9     |          gt0_aurora_8b10b_rx_i                         |aurora_8b10b_rx_gt                            |   196|
+|10    |            gtrxreset_seq_i                             |aurora_8b10b_rx_gtrxreset_seq                 |   155|
+|11    |              gtrxreset_in_cdc_sync                     |aurora_8b10b_rx_cdc_sync__parameterized0_16   |    27|
+|12    |              rst_cdc_sync                              |aurora_8b10b_rx_cdc_sync__parameterized0_17   |    27|
+|13    |              rxpmaresetdone_cdc_sync                   |aurora_8b10b_rx_cdc_sync_18                   |    27|
+|14    |        gt_rxresetfsm_i                                 |aurora_8b10b_rx_rx_startup_fsm                |   539|
+|15    |          gtrxreset_cdc_sync                            |aurora_8b10b_rx_cdc_sync__parameterized0_4    |    27|
+|16    |          rxpmaresetdone_rx_cdc_sync                    |aurora_8b10b_rx_cdc_sync_5                    |    26|
+|17    |          sync2_pmaresetdone_cdc_sync                   |aurora_8b10b_rx_cdc_sync__parameterized0_6    |    27|
+|18    |          sync_RXRESETDONE_cdc_sync                     |aurora_8b10b_rx_cdc_sync__parameterized0_7    |    27|
+|19    |          sync_mmcm_lock_reclocked_cdc_sync             |aurora_8b10b_rx_cdc_sync_8                    |    29|
+|20    |          sync_pll0lock_cdc_sync                        |aurora_8b10b_rx_cdc_sync_9                    |    34|
+|21    |          sync_pll1lock_cdc_sync                        |aurora_8b10b_rx_cdc_sync_10                   |    27|
+|22    |          sync_pmaresetdone_cdc_sync                    |aurora_8b10b_rx_cdc_sync_11                   |    26|
+|23    |          sync_pmaresetdone_fallingedge_detect_cdc_sync |aurora_8b10b_rx_cdc_sync__parameterized0_12   |    27|
+|24    |          sync_run_phase_alignment_int_cdc_sync         |aurora_8b10b_rx_cdc_sync__parameterized0_13   |    27|
+|25    |          sync_rx_fsm_reset_done_int_cdc_sync           |aurora_8b10b_rx_cdc_sync__parameterized0_14   |    27|
+|26    |          sync_time_out_wait_bypass_cdc_sync            |aurora_8b10b_rx_cdc_sync__parameterized0_15   |    27|
+|27    |        gtrxreset_cdc_sync                              |aurora_8b10b_rx_cdc_sync__parameterized0_3    |    27|
+|28    |      hpcnt_reset_cdc_sync                              |aurora_8b10b_rx_cdc_sync_1                    |    26|
+|29    |      rx_aurora_lane_simplex_v5_0_i                     |aurora_8b10b_rx_RX_AURORA_LANE_SIMPLEX_V5     |   266|
+|30    |        aurora_8b10b_rx_hotplug_i                       |aurora_8b10b_rx_hotplug                       |    74|
+|31    |          rx_cc_cdc_sync                                |aurora_8b10b_rx_cdc_sync__parameterized0_2    |    27|
+|32    |        rx_err_detect_simplex_gtp_i                     |aurora_8b10b_rx_RX_ERR_DETECT_SIMPLEX_V5      |    15|
+|33    |        rx_lane_init_sm_simplex_i                       |aurora_8b10b_rx_RX_LANE_INIT_SM_SIMPLEX       |    47|
+|34    |        sym_dec_i                                       |aurora_8b10b_rx_SYM_DEC                       |   130|
+|35    |      rx_global_logic_simplex_i                         |aurora_8b10b_rx_RX_GLOBAL_LOGIC_SIMPLEX       |    80|
+|36    |        rx_channel_err_detect_simplex_i                 |aurora_8b10b_rx_RX_CHANNEL_ERR_DETECT_SIMPLEX |     7|
+|37    |        rx_channel_init_sm_simplex_i                    |aurora_8b10b_rx_RX_CHANNEL_INIT_SM_SIMPLEX    |    73|
+|38    |      rx_ll_i                                           |aurora_8b10b_rx_RX_LL                         |    45|
+|39    |        rx_ll_pdu_datapath_i                            |aurora_8b10b_rx_RX_LL_PDU_DATAPATH            |    45|
+|40    |    clock_module_i                                      |aurora_8b10b_rx_CLOCK_MODULE                  |     1|
+|41    |    gt_common_support                                   |aurora_8b10b_rx_gt_common_wrapper             |    12|
+|42    |    gt_reset_cdc_sync                                   |aurora_8b10b_rx_cdc_sync                      |    26|
+|43    |    reset_sync_user_clk_cdc_sync                        |aurora_8b10b_rx_cdc_sync_0                    |    26|
+|44    |    support_reset_logic_i                               |aurora_8b10b_rx_SUPPORT_RESET_LOGIC           |    39|
+|45    |      gt_rst_r_cdc_sync                                 |aurora_8b10b_rx_cdc_sync__parameterized0      |    27|
++------+--------------------------------------------------------+----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 889.977 ; gain = 560.176
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 889.977 ; gain = 170.434
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 889.977 ; gain = 560.176
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  FD => FDRE: 2 instances
+  FDR => FDRE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+171 Infos, 76 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 889.977 ; gain = 572.313
+INFO: [Common 17-1381] The checkpoint 'C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.runs/aurora_8b10b_rx_synth_1/aurora_8b10b_rx.dcp' has been generated.

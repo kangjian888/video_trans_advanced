@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../video_trans_sourcecode/ip_new/global_clock_generation" \
+"../../../../../video_trans_sourcecode/ip_new/global_clock_generation/global_clock_generation_clk_wiz.v" \
+"../../../../../video_trans_sourcecode/ip_new/global_clock_generation/global_clock_generation.v" \
+"../../../../../video_trans_sourcecode/src_new/clock_gen.v" \
+"../../../../../video_trans_sourcecode/src_new/syn_block.v" \
+"../../../../../video_trans_sourcecode/test_bench/clock_gen_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

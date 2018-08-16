@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../tri_mode_ethernet_mac_1/synth/tri_mode_ethernet_mac_1_axi4_lite_ipif_top.vhd" \
+
+nosort

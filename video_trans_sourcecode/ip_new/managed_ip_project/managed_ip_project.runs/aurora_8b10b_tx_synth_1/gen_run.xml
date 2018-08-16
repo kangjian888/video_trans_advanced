@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="aurora_8b10b_tx_synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1530949645">
+  <File Type="PA-TCL" Name="aurora_8b10b_tx.tcl"/>
+  <File Type="REPORTS-TCL" Name="aurora_8b10b_tx_reports.tcl"/>
+  <File Type="RDS-RDS" Name="aurora_8b10b_tx.vds"/>
+  <File Type="RDS-UTIL" Name="aurora_8b10b_tx_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="aurora_8b10b_tx_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="aurora_8b10b_tx.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/aurora_8b10b_tx">
+    <File Path="$PPRDIR/../aurora_8b10b_tx/aurora_8b10b_tx.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="aurora_8b10b_tx"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/aurora_8b10b_tx">
+    <File Path="$PPRDIR/../aurora_8b10b_tx/aurora_8b10b_tx.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="aurora_8b10b_tx"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

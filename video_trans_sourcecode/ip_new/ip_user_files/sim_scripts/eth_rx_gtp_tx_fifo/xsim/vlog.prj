@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../eth_rx_gtp_tx_fifo/sim/eth_rx_gtp_tx_fifo.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

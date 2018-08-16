@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jul  5 09:49:45 2018
+# Process ID: 44408
+# Current directory: C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent43584 C:\Users\KANG Jian\Desktop\video_trans_advanced\video_trans_sourcecode\ip_new\managed_ip_project\managed_ip_project.xpr
+# Log file: C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/vivado.log
+# Journal file: C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 898.188 ; gain = 154.234
+create_ip -name fifo_generator -vendor xilinx.com -library ip -version 13.2 -module_name eth_rx_gtp_tx_fifo -dir {c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new}
+set_property -dict [list CONFIG.Component_Name {eth_rx_gtp_tx_fifo} CONFIG.INTERFACE_TYPE {AXI_STREAM} CONFIG.Reset_Type {Asynchronous_Reset} CONFIG.Full_Flags_Reset_Value {1} CONFIG.Clock_Type_AXI {Independent_Clock} CONFIG.TUSER_WIDTH {0} CONFIG.Enable_TLAST {true} CONFIG.HAS_TSTRB {false} CONFIG.FIFO_Implementation_wach {Independent_Clocks_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_wach {15} CONFIG.Empty_Threshold_Assert_Value_wach {13} CONFIG.FIFO_Implementation_wdch {Independent_Clocks_Block_RAM} CONFIG.Empty_Threshold_Assert_Value_wdch {1021} CONFIG.FIFO_Implementation_wrch {Independent_Clocks_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_wrch {15} CONFIG.Empty_Threshold_Assert_Value_wrch {13} CONFIG.FIFO_Implementation_rach {Independent_Clocks_Distributed_RAM} CONFIG.Full_Threshold_Assert_Value_rach {15} CONFIG.Empty_Threshold_Assert_Value_rach {13} CONFIG.FIFO_Implementation_rdch {Independent_Clocks_Block_RAM} CONFIG.Empty_Threshold_Assert_Value_rdch {1021} CONFIG.FIFO_Implementation_axis {Independent_Clocks_Block_RAM} CONFIG.FIFO_Application_Type_axis {Packet_FIFO} CONFIG.Input_Depth_axis {131072} CONFIG.Full_Threshold_Assert_Value_axis {131071} CONFIG.Empty_Threshold_Assert_Value_axis {131069} CONFIG.Enable_Safety_Circuit {true}] [get_ips eth_rx_gtp_tx_fifo]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'eth_rx_gtp_tx_fifo' to 'eth_rx_gtp_tx_fifo' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/eth_rx_gtp_tx_fifo/eth_rx_gtp_tx_fifo.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'eth_rx_gtp_tx_fifo'...
+generate_target all [get_files  {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/eth_rx_gtp_tx_fifo/eth_rx_gtp_tx_fifo.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'eth_rx_gtp_tx_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'eth_rx_gtp_tx_fifo'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'eth_rx_gtp_tx_fifo'...
+catch { config_ip_cache -export [get_ips -all eth_rx_gtp_tx_fifo] }
+export_ip_user_files -of_objects [get_files {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/eth_rx_gtp_tx_fifo/eth_rx_gtp_tx_fifo.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/eth_rx_gtp_tx_fifo/eth_rx_gtp_tx_fifo.xci}}]
+launch_runs -jobs 16 eth_rx_gtp_tx_fifo_synth_1
+[Thu Jul  5 22:11:02 2018] Launched eth_rx_gtp_tx_fifo_synth_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.runs/eth_rx_gtp_tx_fifo_synth_1/runme.log
+export_simulation -of_objects [get_files {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/eth_rx_gtp_tx_fifo/eth_rx_gtp_tx_fifo.xci}}] -directory {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/ip_user_files} -ipstatic_source_dir {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/modelsim} {questa=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/questa} {riviera=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/riviera} {activehdl=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.CLKOUT4_USED {true} CONFIG.CLKOUT5_USED {true} CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {50.000} CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {50.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT3_DIVIDE {20} CONFIG.MMCM_CLKOUT4_DIVIDE {20} CONFIG.NUM_OUT_CLKS {5} CONFIG.CLKOUT4_JITTER {129.198} CONFIG.CLKOUT4_PHASE_ERROR {89.971} CONFIG.CLKOUT5_JITTER {129.198} CONFIG.CLKOUT5_PHASE_ERROR {89.971}] [get_ips global_clock_generation]
+generate_target all [get_files  {{C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/global_clock_generation/global_clock_generation.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'global_clock_generation'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'global_clock_generation'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'global_clock_generation'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'global_clock_generation'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'global_clock_generation'...
+catch { config_ip_cache -export [get_ips -all global_clock_generation] }
+export_ip_user_files -of_objects [get_files {{C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/global_clock_generation/global_clock_generation.xci}}] -no_script -sync -force -quiet
+reset_run global_clock_generation_synth_1
+launch_runs -jobs 16 global_clock_generation_synth_1
+[Fri Jul  6 10:54:32 2018] Launched global_clock_generation_synth_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.runs/global_clock_generation_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/global_clock_generation/global_clock_generation.xci}}] -directory {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/ip_user_files} -ipstatic_source_dir {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/modelsim} {questa=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/questa} {riviera=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/riviera} {activehdl=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name axis_dwidth_converter -vendor xilinx.com -library ip -version 1.1 -module_name axis_dwidth_converter_0 -dir {c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new}
+set_property -dict [list CONFIG.HAS_TLAST {1} CONFIG.HAS_ACLKEN {0} CONFIG.HAS_MI_TKEEP {1}] [get_ips axis_dwidth_converter_0]
+generate_target {instantiation_template} [get_files {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/axis_dwidth_converter_0/axis_dwidth_converter_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axis_dwidth_converter_0'...
+generate_target all [get_files  {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/axis_dwidth_converter_0/axis_dwidth_converter_0.xci}}]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axis_dwidth_converter_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axis_dwidth_converter_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axis_dwidth_converter_0'...
+catch { config_ip_cache -export [get_ips -all axis_dwidth_converter_0] }
+export_ip_user_files -of_objects [get_files {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/axis_dwidth_converter_0/axis_dwidth_converter_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/axis_dwidth_converter_0/axis_dwidth_converter_0.xci}}]
+launch_runs -jobs 16 axis_dwidth_converter_0_synth_1
+[Fri Jul  6 17:43:10 2018] Launched axis_dwidth_converter_0_synth_1...
+Run output will be captured here: C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.runs/axis_dwidth_converter_0_synth_1/runme.log
+export_simulation -of_objects [get_files {{c:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/axis_dwidth_converter_0/axis_dwidth_converter_0.xci}}] -directory {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/ip_user_files} -ipstatic_source_dir {C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/modelsim} {questa=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/questa} {riviera=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/riviera} {activehdl=C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/managed_ip_project/managed_ip_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  6 19:12:19 2018...

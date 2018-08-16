@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/global_clock_generation/global_clock_generation_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module global_clock_generation_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/ip_new/global_clock_generation/global_clock_generation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module global_clock_generation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/src_new/clock_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/src_new/syn_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module syn_block
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/KANG Jian/Desktop/video_trans_advanced/video_trans_sourcecode/test_bench/clock_gen_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_gen_tb
